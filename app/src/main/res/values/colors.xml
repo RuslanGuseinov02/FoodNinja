@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    // LIGHT MODE COLORS
+    <color name="LightTitleColor">#15BE77</color>
+    <color name="LighttextsColor">#FF000000</color>
+    <color name="LightForgotPassColor">#15BE77</color>
+    <color name="LightButtonTextColor">#FFFFFFFF</color>
+    <color name="LightButtonColor">#15BE77</color>
+    <color name="LightHintTextColor">#FF000000</color>
+    <color name="LightBoxStrokeColor">#15BE77</color>
+    <color name="LightBackgroundColor">#F1FAFF</color>
+    <color name="LightItemIconTint">#10955D</color>
+    <color name="LightBackgroundTint">#FFFFFFFF</color>
+    <color name="LightItemRippleColor">#15BE77</color>
+    <color name="LightWhiteTextColors">#FFFFFFFF</color>
+    <color name="LightCardBackgroundColor">#15BE77</color>
+    <color name="LightOrderButtonColor">#FFFFFFFF</color>
+    <color name="LightOrderButtonTextColor">#15BE77</color>
+    <color name="LightSignOutTextColor">#C20000</color>
+
+
+    // NIGHT MODE COLORS
+    <color name="NightTitleColor">#15BE77</color>
+    <color name="NighttextsColor">#FFFFFFFF</color>
+    <color name="NightForgotPassColor">#15BE77</color>
+    <color name="NightButtonTextColor">#FFFFFFFF</color>
+    <color name="NightButtonColor">#15BE77</color>
+    <color name="NightHintTextColor">#FF000000</color>
+    <color name="NightBoxStrokeColor">#15BE77</color>
+    <color name="NightBackgroundColor">#000000</color>
+    <color name="NightItemIconTint">#53E88B</color>
+    <color name="NightBackgroundTint">#242424</color>
+    <color name="NightItemRippleColor">#15BE77</color>
+    <color name="NightWhiteTextColors">#FFFFFFFF</color>
+    <color name="NightOrderButtonColor">#FFFFFFFF</color>
+    <color name="NightOrderButtonTextColor">#15BE77</color>
+    <color name="NightSignOutTextColor">#C20000</color>
+</resources>

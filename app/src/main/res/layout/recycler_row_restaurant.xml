@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="5dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivLogo"
+        style="@style/circular"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:srcCompat="@drawable/mcdonaldslogo" />
+
+    <TextView
+        android:id="@+id/ivName"
+        style="@style/TextsColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="McDonald's"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+</LinearLayout>

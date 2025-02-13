@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.SignUpFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/salad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        style="@style/TitleColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/angkor"
+        android:text="@string/AppTitle"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="24dp"
+        app:autoSizeMinTextSize="20dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextsColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/SignUpMessage"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="16dp"
+        app:autoSizeMinTextSize="14dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/EditTextColors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmailCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="8dp"
+                android:hint="@string/Email"
+                android:inputType="text|textEmailAddress"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/EditTextColors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="8dp"
+                android:hint="@string/Password"
+                android:inputType="text|textPassword"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/EditTextColors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="8dp"
+                android:hint="@string/ConfirmPassword"
+                android:inputType="text|textPassword"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreate"
+        style="@style/ButtonColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/CreateButton"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

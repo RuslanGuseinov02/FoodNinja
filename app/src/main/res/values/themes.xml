@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodNinja" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="bottomNavigationStyle">@style/MyBottomBar</item>
+    </style>
+
+    <style name="Theme.FoodNinja" parent="Base.Theme.FoodNinja" />
+
+    <style name="TitleColor">
+        <item name="android:textColor">@color/LightTitleColor</item>
+    </style>
+    <style name="TextsColors">
+        <item name="android:textColor">@color/LighttextsColor</item>
+    </style>
+    <style name="ForgotPassColor">
+        <item name="android:textColor">@color/LightForgotPassColor</item>
+    </style>
+    <style name="ButtonColor">
+        <item name="android:backgroundTint">@color/LightButtonColor</item>
+        <item name="android:textColor">@color/LightButtonTextColor</item>
+    </style>
+    <style name="EditTextColors">
+        <item name="android:textColorHint">@color/LightHintTextColor</item>
+        <item name="android:strokeColor">@color/LightBoxStrokeColor</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="endIconTint">@color/LightBoxStrokeColor</item>
+    </style>
+    <style name="ConstraintLayoutBackground">
+        <item name="android:background">#EEEEFD</item>
+    </style>
+
+    <style name="ButtonOrder">
+        <item name="backgroundTint">@color/LightOrderButtonColor</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="android:textColor">@color/LightOrderButtonTextColor</item>
+    </style>
+    <style name="ButtonSignOut">
+        <item name="backgroundTint">@color/LightOrderButtonColor</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/LightSignOutTextColor</item>
+        <item name="android:textColor">@color/LightSignOutTextColor</item>
+    </style>
+    <style name="ButtonChangePassword">
+        <item name="backgroundTint">@color/LightOrderButtonColor</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">#304FFE</item>
+        <item name="android:textColor">#304FFE</item>
+    </style>
+
+    <style name="MyBottomBar" parent="Widget.MaterialComponents.BottomNavigationView">
+
+        <item name="backgroundTint">@color/white</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+        <item name="itemIconSize">30dp</item>
+        <item name="itemIconTint">@color/LightItemIconTint</item>
+        <item name="itemRippleColor">@color/LightItemRippleColor</item>
+        <item name="shapeAppearanceOverlay">@style/bottomNavStyle</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.AppCompat.Small</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:elevation">15dp</item>
+    </style>
+
+    <style name="bottomNavStyle" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">30%</item>
+    </style>
+</resources>

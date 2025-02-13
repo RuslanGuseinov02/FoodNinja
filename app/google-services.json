@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "315418140601",
+    "project_id": "foodninja-d1ffb",
+    "storage_bucket": "foodninja-d1ffb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315418140601:android:7763216a301970ff7ea068",
+        "android_client_info": {
+          "package_name": "com.ruslan.huseynov.foodninja"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWVir1LhlXmJFSZtIR0GzXyUjALWtHPbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

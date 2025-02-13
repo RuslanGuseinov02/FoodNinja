@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.ProfileFragment">
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switchNight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@drawable/moon"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPerson"
+        app:thumbTint="@color/black" />
+
+    <TextView
+        android:id="@+id/textView15"
+        style="@style/TextsColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/angkor"
+        android:text="@string/Hi"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="30dp"
+        app:autoSizeMinTextSize="28dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/textview_design"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="8dp"
+        android:text="Test"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="16dp"
+        app:autoSizeMinTextSize="14dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchNight" />
+
+    <Button
+        android:id="@+id/btnReset"
+        style="@style/ButtonChangePassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/ChangeYourPassword"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <Button
+        android:id="@+id/btnSignOut"
+        style="@style/ButtonSignOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/LogOut"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewPerson"
+        style="@style/circular2"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:srcCompat="@drawable/person" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TitleColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/angkor"
+        android:text="@string/AppTitle"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        style="@style/ButtonSignOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/DeleteAccount"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReset" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
