@@ -75,5 +75,6 @@ dependencies {
     implementation(libs.glide)
     // Splash Screen
     implementation(libs.androidx.core.splashscreen)
-
+    // Lottie Files
+    implementation("com.airbnb.android:lottie:6.3.0")
 }

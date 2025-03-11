@@ -28,7 +28,9 @@
             app:boxCornerRadiusTopEnd="15dp"
             app:boxCornerRadiusTopStart="15dp"
             app:boxStrokeColor="@color/LightBoxStrokeColor"
-            app:endIconMode="clear_text">
+            app:cursorColor="@color/LightBoxStrokeColor"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/LightBoxStrokeColor">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmailLogin"
@@ -56,7 +58,9 @@
             app:boxCornerRadiusTopEnd="15dp"
             app:boxCornerRadiusTopStart="15dp"
             app:boxStrokeColor="@color/LightBoxStrokeColor"
-            app:endIconMode="password_toggle">
+            app:cursorColor="@color/LightBoxStrokeColor"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/LightBoxStrokeColor">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassLogin"
